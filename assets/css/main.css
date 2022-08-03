@@ -383,11 +383,9 @@ hr.major {
     font-size: 1.75em;
     font-family: "Poppins", sans-serif;
   }
-
   h2 {
     font-size: 1.5em;
   }
-
   h3 {
     font-size: 1.25em;
   }
@@ -2626,12 +2624,10 @@ table.alt tbody tr td {
     height: 100%;
     grid-template-areas: "header image content" "header image content" "header image content";
   }
-
   > Section {
     flex-wrap: wrap;
     padding-left: 0;
   }
-
   .header {
     margin-bottom: 1em;
     padding: 0;
@@ -2643,22 +2639,18 @@ table.alt tbody tr td {
     display: grid;
     grid-template-areas: "header" "image" "content";
   }
-
   .header h4 p {
     margin-bottom: 1em;
   }
-
   .content p {
     margin: -6em 0 2em 0;
     width: 100vw;
     max-width: 80vw;
   }
-
   .image {
     position: relative;
     margin: -14em -5em 2em 0;
   }
-
   .button .small .primary .scrolly {
     width: 100%;
     margin-bottom: 1em;
@@ -3221,7 +3213,6 @@ body .testimonials {
   #main {
     margin: 0 0 0.5em 0em;
   }
-
   .inner .major.special-testimonials p {
     margin: 1.5em 0;
   }
@@ -3389,19 +3380,15 @@ body .testimonials {
     margin: 0 0.5em 0;
     width: 100%;
   }
-
   .inner .start h1 {
     margin-top: 0.5em;
   }
-
   h2 {
     line-height: 1em;
   }
-
   .item-nested-start p {
     width: 100%;
   }
-
   .item-nested h2 {
     width: 100%;
   }
@@ -3460,17 +3447,14 @@ body .testimonials {
     margin: 0 0.5em 0;
     width: 100%;
   }
-
   .major.special-achievements h2 {
     margin: 0 0 3em 0.5em;
     line-height: 1em;
     color: #b7475a;
   }
-
   .image-achievements {
     margin-top: 2em;
   }
-
   .item-nested p {
     width: 95%;
   }
@@ -3665,11 +3649,9 @@ body .testimonials {
   #main {
     margin: 0 0 0.5em 0em;
   }
-
   .inner .major.special-testimonials p {
     margin: 1.5em 0;
   }
-
   .content-works .fas p {
     font-size: 1em;
     color: red;
@@ -3820,7 +3802,6 @@ body .testimonials {
     width: 100%;
     height: auto;
   }
-
   #comodo img {
     width: 100%;
     height: auto;
@@ -3903,11 +3884,9 @@ body .testimonials {
   #main {
     margin: 0 0 0.5em 0em;
   }
-
   .inner .major.special-testimonials p {
     margin: 1.5em 0;
   }
-
   #main-content h3 {
     color: #005a80;
     letter-spacing: 2px;
@@ -4031,7 +4010,6 @@ a:link {
 .modal-footer h3 {
     font-size: 2.25em;
   }
-
   .modal-footer h4 {
     text-decoration: none;
     font-size: 1.5em;
@@ -4373,7 +4351,6 @@ li.privacy-content {
     width: 100%;
     min-width: 95%;
   }
-
   .privacy-intro h2 {
     display: flex;
     flex-wrap: wrap;
@@ -4382,7 +4359,6 @@ li.privacy-content {
     width: 100%;
     min-width: 95%;
   }
-
   .privacy-content p {
     width: 95%;
   }
@@ -4664,7 +4640,7 @@ body.is-menu-visible #menu .inner {
 
 /* Banner */
 #banner {
-  background-image: url("../../images/girls-in-grey.jpg");
+  background-image: url("../../images/2-girls-in-red.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
