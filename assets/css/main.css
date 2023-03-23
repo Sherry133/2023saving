@@ -152,16 +152,13 @@ textarea {
 }
 
 /* Basic */
-@-ms-viewport {
-  width: device-width;
-}
 body {
   -ms-overflow-style: scrollbar;
 }
 
 @media screen and (max-width: 480px) {
   html,
-body {
+  body {
     min-width: 320px;
   }
 }
@@ -178,7 +175,6 @@ html {
 body.is-preload *,
 body.is-preload *:before,
 body.is-preload *:after {
-  -webkit-animation: none !important;
   animation: none !important;
   transition: none !important;
 }
@@ -200,49 +196,49 @@ textarea {
 }
 @media screen and (max-width: 1680px) {
   body,
-input,
-select,
-textarea {
+  input,
+  select,
+  textarea {
     font-size: 12pt;
   }
 }
 @media screen and (max-width: 1280px) {
   body,
-input,
-select,
-textarea {
+  input,
+  select,
+  textarea {
     font-size: 12pt;
   }
 }
 @media screen and (max-width: 980px) {
   body,
-input,
-select,
-textarea {
+  input,
+  select,
+  textarea {
     font-size: 12pt;
   }
 }
 @media screen and (max-width: 736px) {
   body,
-input,
-select,
-textarea {
+  input,
+  select,
+  textarea {
     font-size: 12pt;
   }
 }
 @media screen and (max-width: 480px) {
   body,
-input,
-select,
-textarea {
+  input,
+  select,
+  textarea {
     font-size: 12pt;
   }
 }
 @media screen and (max-width: 360px) {
   body,
-input,
-select,
-textarea {
+  input,
+  select,
+  textarea {
     font-size: 11pt;
   }
 }
@@ -2198,17 +2194,17 @@ ul.actions.fit.stacked {
     padding-top: 0;
   }
   ul.actions:not(.fixed) li input[type=submit],
-ul.actions:not(.fixed) li input[type=reset],
-ul.actions:not(.fixed) li input[type=button],
-ul.actions:not(.fixed) li button,
-ul.actions:not(.fixed) li .button {
+  ul.actions:not(.fixed) li input[type=reset],
+  ul.actions:not(.fixed) li input[type=button],
+  ul.actions:not(.fixed) li button,
+  ul.actions:not(.fixed) li .button {
     width: 100%;
   }
   ul.actions:not(.fixed) li input[type=submit].icon:before,
-ul.actions:not(.fixed) li input[type=reset].icon:before,
-ul.actions:not(.fixed) li input[type=button].icon:before,
-ul.actions:not(.fixed) li button.icon:before,
-ul.actions:not(.fixed) li .button.icon:before {
+  ul.actions:not(.fixed) li input[type=reset].icon:before,
+  ul.actions:not(.fixed) li input[type=button].icon:before,
+  ul.actions:not(.fixed) li button.icon:before,
+  ul.actions:not(.fixed) li .button.icon:before {
     margin-left: -0.5em;
   }
 }
@@ -3248,8 +3244,7 @@ body .testimonials {
 
 #menu li:hover > .submenu {
   display: block;
-  -webkit-animation: slideup 0.3s ease-in-out;
-          animation: slideup 0.3s ease-in-out;
+  animation: slideup 0.3s ease-in-out;
   font-size: 0.75em;
   background-color: #005a80;
   margin: 0 0.75em 0 0.75em;
@@ -3268,39 +3263,17 @@ body .testimonials {
 
 #menu li:hover > .submenu2 {
   display: block;
-  -webkit-animation: slideup 0.3s ease-in-out;
-          animation: slideup 0.3s ease-in-out;
+  animation: slideup 0.3s ease-in-out;
   font-size: 0.75em;
   background-color: #005a80;
   margin: 0 0.75em 0 0.75em;
   border-radius: 6px;
 }
 
-@-webkit-keyframes slideup {
-  0% {
-    opacity: 0;
-    transform: translateY(18px);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
 @keyframes slideup {
   0% {
     opacity: 0;
     transform: translateY(18px);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-@-webkit-keyframes slideleft {
-  0% {
-    opacity: 0;
-    transform: translateX(18px);
   }
   100% {
     opacity: 1;
@@ -3918,8 +3891,12 @@ body .testimonials {
   --modal-font-family: "Poppins", sans-serif;
 }
 
+#popup img {
+  background-image: linear-gradient(120deg, hsl(107, 61%, 30%) 50%, hsl(237, 87%, 41%) 90%);
+}
+
 #popup {
-  background-image: linear-gradient(120deg, hsl(240deg, 100%, 50%) 0%, #fda085 80%);
+  background-color: #ececec;
 }
 
 .modal-header {
@@ -3937,7 +3914,7 @@ body .testimonials {
   max-width: 100%;
   max-height: 100%;
   transition: 200ms transform ease-in-out;
-  aspect-ratio: 16/9;
+  aspect-ratio: 1;
   -o-object-fit: contain;
   object-fit: contain;
   -o-object-position: center;
@@ -3989,9 +3966,7 @@ a:link {
   max-width: 70%;
   max-height: 70%;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-  -webkit-animation-name: modalopen;
   animation-name: modalopen;
-  -webkit-animation-duration: var(--modal-duration);
   animation-duration: var(--modal-duration);
 }
 
@@ -3999,15 +3974,16 @@ a:link {
 .modal-footer h3 {
   margin: 0;
   padding-bottom: 0.5em;
-  color: #333;
   text-align: center;
+  color: #ececec;
   font-size: 1rem;
   font-family: var(--modal-font-family);
+  background-image: linear-gradient(120deg, hsl(107, 61%, 30%) 50%, hsl(237, 87%, 41%) 90%);
 }
 
 @media (min-width: 40em) {
   .modal-header h2,
-.modal-footer h3 {
+  .modal-footer h3 {
     font-size: 2.25em;
   }
   .modal-footer h4 {
@@ -4510,7 +4486,6 @@ li.privacy-content {
   transition: opacity 0.5s ease, visibility 0.5s;
   -moz-user-select: none;
   -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: rgba(51, 50, 97, 0.9);
@@ -4640,7 +4615,7 @@ body.is-menu-visible #menu .inner {
 
 /* Banner */
 #banner {
-  background-image: url("../../images/2-girls-in-red.jpg");
+  background-image: url("../../images/girls-in-grey.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -4687,7 +4662,7 @@ body.is-menu-visible #menu .inner {
   content: "";
   display: block;
   background-color: #333261;
-  opacity: 0.4;
+  opacity: 0.45;
   position: absolute;
   top: 0;
   left: 0;
