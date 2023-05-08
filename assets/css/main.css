@@ -2475,6 +2475,20 @@ table.alt tbody tr td {
 }
 
 /* Posts */
+#three p{
+display: inline-block;
+color: white;
+letter-spacing: 2px;
+background-color: transparent;
+margin-left: 0;
+width: 50%;
+padding: 1em;
+}
+#three .alt  {
+  display: inline-block;
+  background-color: null;
+  padding-left: 0;
+}
 .posts article {
   display: -moz-flex;
   display: -ms-flex;
@@ -2486,10 +2500,14 @@ table.alt tbody tr td {
 }
 .posts article .content-posts p {
   margin-right: 6em;
+ 
+  
 }
 .posts article .content {
   --ms-flex: 1;
   color: #272727;
+ 
+ 
 }
 .posts article .image {
   -moz-order: 99;
@@ -2509,6 +2527,7 @@ table.alt tbody tr td {
     flex-shrink: 0;
     width: 33%;
   }
+
   .posts .image img {
     max-width: 100%;
   }
@@ -3892,7 +3911,8 @@ body .testimonials {
 }
 
 #popup img {
-  background-image: linear-gradient(120deg, hsl(107, 61%, 30%) 50%, hsl(237, 87%, 41%) 90%);
+  background-image: linear-gradient(120deg,  hsl(197, 46%, 46%) 50%,   hsl(197, 46%, 46%) 50%,
+  hsl(44, 87%, 41%) 90%);
 }
 
 #popup {
@@ -3978,7 +3998,7 @@ a:link {
   color: #ececec;
   font-size: 1rem;
   font-family: var(--modal-font-family);
-  background-image: linear-gradient(120deg, hsl(107, 61%, 30%) 50%, hsl(237, 87%, 41%) 90%);
+  background-image: linear-gradient(120deg, hsl(120, 5%, 4%) 50%, hsl(231, 3%, 50%) 90%);
 }
 
 @media (min-width: 40em) {
@@ -4613,26 +4633,54 @@ body.is-menu-visible #menu .inner {
   opacity: 1;
 }
 
-/* Banner */
 #banner {
-  background-image: url("../../images/girls-in-grey.jpg");
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  color: #fff;
-  font-weight: 900;
-  padding: 16em 3em;
+  padding: 0em;
   position: relative;
-  text-align: center;
-  background-color: rgb(255, 255, 255);
+  cursor: default;  
+  
 }
+
+  #banner:after {
+    transition: opacity 1s ease-in-out;
+    transition: delay, '0.5s';
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(94, 109, 109, 0.5);
+    opacity: 1;
+    display: block;
+  }
+
+    video {
+      background-attachment: fixed;
+      background-position: center center;
+      background-size: cover;
+      object-fit: cover;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      z-index: -1;
+      opacity: 1;
+    }
+    #banner::before {
+      opacity: 1;
+      z-index: 100;;
+    }
+
 #banner h1 {
-  color: inherit;
+  color: #33bbcf;
   font-size: 4em;
   text-align: center;
-  margin: 1.5em 0 0.65em 0;
+  margin: -1em 0 0.65em 0;
   padding: 0;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 3px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
@@ -4649,6 +4697,9 @@ body.is-menu-visible #menu .inner {
   min-width: 14em;
   border-radius: 8px;
   margin-top: 0%;
+  letter-spacing: 2px;
+  background: inherit;
+  border: 2px solid #33bbcf;
 }
 #banner > .inner {
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
@@ -4656,19 +4707,7 @@ body.is-menu-visible #menu .inner {
   position: relative;
   z-index: 1;
 }
-#banner:after {
-  transition: opacity 1s ease-in-out;
-  pointer-events: none;
-  content: "";
-  display: block;
-  background-color: #333261;
-  opacity: 0.45;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
 body.is-preload #banner .inner {
   transform: translateY(1em);
   opacity: 0;
@@ -4678,8 +4717,14 @@ body.is-preload #banner:after {
 }
 @media screen and (min-width: 1281px) {
   #banner {
-    background-attachment: scroll;
+    background-attachment: scroll; 
     padding: 16em 3em;
+  }
+  #banner h1 {
+    margin-top: 1em;
+    font-size: 5em ;
+   
+
   }
   #banner h4 {
     color: #fff;
@@ -4690,8 +4735,12 @@ body.is-preload #banner:after {
 }
 @media screen and (max-width: 1280px) {
   #banner {
-    background-attachment: scroll;
-    padding: 14em 3em;
+    /* background-attachment: scroll; */
+    padding: 11em 3em;
+  }
+  #banner h1 {
+    font-size: 4em;
+    margin-top: 1em;
   }
   #banner h4 {
     color: #fff;
@@ -4703,6 +4752,7 @@ body.is-preload #banner:after {
 @media screen and (max-width: 980px) {
   #banner h1 {
     font-size: 2.8em;
+    margin-top: 3em;
   }
   #banner p {
     width: 100%;
@@ -4720,11 +4770,12 @@ body.is-preload #banner:after {
   #banner h1 {
     font-size: 2.25em;
     color: #ececec;
-    margin-bottom: 11em;
-    padding-top: 3em;
+    margin-bottom:11em;
+   padding-top: 1em;
   }
   #banner h1 span {
-    display: none;
+    display: block;
+    margin-top: -.75em;
   }
   #banner h2 span {
     display: none;
@@ -4744,12 +4795,17 @@ body.is-preload #banner:after {
   }
 }
 @media screen and (max-width: 480px) {
-  #banner {
+  #banner  {
     background-image: url("../../images/twoboysatschool_sm.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   object-fit: cover;
   }
   #banner h1 {
     font-size: 1.75em;
-    margin-top: -4em;
+    margin-top: -2em;
     line-height: 1em;
     font-weight: 400;
     color: #ececec;
