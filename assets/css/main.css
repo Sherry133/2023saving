@@ -2477,18 +2477,19 @@ table.alt tbody tr td {
 /* Posts */
 #three p{
 display: inline-block;
-color: white;
+color: rgba(13, 108, 140 .7);
+font-size: 1.25em;
 letter-spacing: 2px;
 background-color: transparent;
 margin-left: 0;
-width: 50%;
+width: 70%;
 padding: 1em;
 }
 
 #three .alt  
 {
   display: inline-block;
-  background-color: null;
+
   padding-left: 0;
 }
 .posts article {
@@ -2502,6 +2503,7 @@ padding: 1em;
 }
 .posts article .content-posts p {
   margin-right: 6em; 
+ 
 }
 .posts article .content {
   --ms-flex: 1;
@@ -4393,6 +4395,10 @@ li.privacy-content {
   display: block;
   cursor: default;
   white-space: nowrap;
+ 
+}
+#header h5 {
+  margin-left: .65em;
 }
 #header > .logo a {
   transition: color 0.2s ease-in-out;
@@ -4702,6 +4708,7 @@ body.is-menu-visible #menu .inner {
   letter-spacing: 3px;
   font-weight: 400;
 }
+
 #banner .button {
   min-width: 14em;
   border-radius: 8px;
@@ -4749,7 +4756,7 @@ body.is-preload #banner:after {
   }
   #banner h1 {
     font-size: 4em;
-    margin-top: 1em;
+    margin-top: 0em;
   }
   #banner h4 {
     color: #fff;
@@ -4814,9 +4821,9 @@ body.is-preload #banner:after {
   }
   #banner h1 {
     font-size: 2.25rem;
-    width: 100%;
+    min-width: 100%;
     margin-top:1em;
-    line-height: 1em;
+    line-height: 1.25em;
     font-weight: 400;
     color: #ececec;
   }
@@ -4836,6 +4843,10 @@ margin-top: -14em;
   }
   #banner .button {
     max-width: 7em;
+  }
+  #header .logo {
+   margin-top: 1em;
+   margin-left: -.5em;
   }
 }
 @media screen and (max-width: 360px) {
