@@ -2484,7 +2484,9 @@ margin-left: 0;
 width: 50%;
 padding: 1em;
 }
-#three .alt  {
+
+#three .alt  
+{
   display: inline-block;
   background-color: null;
   padding-left: 0;
@@ -2499,9 +2501,7 @@ padding: 1em;
   margin-bottom: 2em;
 }
 .posts article .content-posts p {
-  margin-right: 6em;
- 
-  
+  margin-right: 6em; 
 }
 .posts article .content {
   --ms-flex: 1;
@@ -2529,7 +2529,7 @@ padding: 1em;
   }
 
   .posts .image img {
-    max-width: 100%;
+    max-width: 50%;
   }
 }
 @media screen and (max-width: 980px) {
@@ -2554,8 +2554,12 @@ padding: 1em;
   }
   .posts article .content-posts p {
     margin-bottom: 1em;
-    margin-right: 2em;
+    margin-right: 0em;
     margin-top: 1em;
+   
+  }
+  #three p {
+    width: 90%;
   }
 }
 
@@ -2639,7 +2643,7 @@ padding: 1em;
     height: 100%;
     grid-template-areas: "header image content" "header image content" "header image content";
   }
-  > Section {
+   Section {
     flex-wrap: wrap;
     padding-left: 0;
   }
@@ -4636,7 +4640,8 @@ body.is-menu-visible #menu .inner {
 #banner {
   padding: 0em;
   position: relative;
-  cursor: default;  
+  cursor: default;
+ 
   
 }
 
@@ -4653,6 +4658,7 @@ body.is-menu-visible #menu .inner {
     background-color:rgba(94, 109, 109, 0.5);
     opacity: 1;
     display: block;
+    overflow: hidden;
   }
 
     video {
@@ -4671,7 +4677,9 @@ body.is-menu-visible #menu .inner {
     }
     #banner::before {
       opacity: 1;
-      z-index: 100;;
+      z-index: 100;
+ 
+
     }
 
 #banner h1 {
@@ -4684,6 +4692,7 @@ body.is-menu-visible #menu .inner {
   letter-spacing: 3px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
 }
 #banner p {
   font-size: 2em;
@@ -4717,7 +4726,7 @@ body.is-preload #banner:after {
 }
 @media screen and (min-width: 1281px) {
   #banner {
-    background-attachment: scroll; 
+    /* background-attachment: scroll;  */
     padding: 16em 3em;
   }
   #banner h1 {
@@ -4796,7 +4805,7 @@ body.is-preload #banner:after {
 }
 @media screen and (max-width: 480px) {
   #banner  {
-    background-image: url("../../images/twoboysatschool_sm.jpg");
+    /* background-image: url("../../images/twoboysatschool_sm.jpg"); */
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-position: center center;
@@ -4804,12 +4813,17 @@ body.is-preload #banner:after {
    object-fit: cover;
   }
   #banner h1 {
-    font-size: 1.75em;
-    margin-top: -2em;
+    font-size: 2.25rem;
+    width: 100%;
+    margin-top:1em;
     line-height: 1em;
     font-weight: 400;
     color: #ececec;
   }
+  #banner h2 {
+margin-top: -14em;
+  }
+
   #banner p {
     font-size: 1.5em;
     margin-top: 12em;
