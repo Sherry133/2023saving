@@ -4725,15 +4725,21 @@ body.is-menu-visible #menu .inner {
   display: grid;
   position: absolute;
   top: 65%;
-right: 0%;
- /* transform: skewy(-22deg); */
+  right: 0%;
+  transition: transform 1s;
+
+}
+#banner .coin:hover {
+  transform: rotate(1080deg) scale(1.75) translateX(50px);
 }
 #banner .goldcoin {
   display: grid;
   position: absolute;
-top: 50%;
-/* right: 0%;
- transform: skewy(-22deg); */
+  top: 40%;
+ transform-origin: left top; transition: transform 2s;
+}
+#banner .goldcoin:hover {
+  transform: rotate(500deg);
 }
 
 #banner > .inner {
@@ -4753,10 +4759,10 @@ body.is-preload #banner:after {
 @media screen and (min-width: 1281px) {
   #banner {
     /* background-attachment: scroll;  */
-    padding: 16em 3em;
+    padding: 12em 3em;
   }
   #banner h1 {
-    margin-top: 1em;
+    margin-top: 0em;
     font-size: 5em ;
    
 
@@ -4766,6 +4772,9 @@ body.is-preload #banner:after {
     font-weight: normal;
     letter-spacing: 0.15em;
     font-size: 1.75em;
+  }
+  #banner .goldcoin {
+   top: 40%;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -4843,7 +4852,9 @@ body.is-preload #banner:after {
     min-width: 100%;
     margin-top:1em;
     line-height: 1.25em;
-    font-weight: 400;
+    font-weight: 700;
+   text-transform: uppercase;
+   font-family: 'Poppins', sans-serif;
     color: #ececec;
   }
   #banner h2 {
