@@ -4495,6 +4495,14 @@ li.privacy-content {
     min-width: 320px;
     color: blue;
   }
+  #header h5 {
+    margin-left: -.05em;
+  }
+  .goldcoin {
+    left: -11%;
+
+
+  }
 }
 
 /* Menu */
@@ -4646,9 +4654,7 @@ body.is-menu-visible #menu .inner {
 #banner {
   padding: 0em;
   position: relative;
-  cursor: default;
- 
-  
+  cursor: default; 
 }
 
   #banner:after {
@@ -4684,8 +4690,6 @@ body.is-menu-visible #menu .inner {
     #banner::before {
       opacity: 1;
       z-index: 100;
- 
-
     }
 
 #banner h1 {
@@ -4717,6 +4721,21 @@ body.is-menu-visible #menu .inner {
   background: inherit;
   border: 2px solid #33bbcf;
 }
+#banner .coin {
+  display: grid;
+  position: absolute;
+  top: 65%;
+right: 0%;
+ /* transform: skewy(-22deg); */
+}
+#banner .goldcoin {
+  display: grid;
+  position: absolute;
+top: 50%;
+/* right: 0%;
+ transform: skewy(-22deg); */
+}
+
 #banner > .inner {
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   opacity: 1;
