@@ -5,7 +5,7 @@
 // }
 
 #banner {
-    @include vendor("background-image", url("../../images/girls-in-grey.jpg"));
+    @include vendor("background-image", url("../../images/stary_night.png"));
 
     // background:	'linear-gradient(to top, #{transparentize(_palette(bg-alt), 0.3), #{transparentize(_palette(bg-med), 0.9)}}';
     background-attachment: fixed;

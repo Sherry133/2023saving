@@ -4640,7 +4640,7 @@ body.is-menu-visible #menu .inner {
 
 /* Banner */
 #banner {
-  background-image: url("../../images/2-girls-in-red.jpg");
+  background-image: url("../../images/girls-in-grey.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -4650,9 +4650,10 @@ body.is-menu-visible #menu .inner {
   position: relative;
   text-align: center;
   background-color: rgb(255, 255, 255);
+
 }
 #banner h1 {
-  color: inherit;
+  color:inherit;
   font-size: 4em;
   text-align: center;
   margin: 1.5em 0 0.65em 0;
@@ -4662,11 +4663,14 @@ body.is-menu-visible #menu .inner {
   font-weight: 700;
   font-family: "Poppins", sans-serif;
 }
+#banner h6 {
+  color: green;
+}
 #banner p {
-  font-size: 2em;
+  font-size: 1em;
   margin-bottom: 0.75em;
   margin-top: -1.25em;
-  color: inherit;
+  color: red;
   letter-spacing: 3px;
   font-weight: 400;
 }
@@ -4705,6 +4709,7 @@ body.is-preload #banner:after {
   #banner {
     background-attachment: scroll;
     padding: 16em 3em;
+
   }
   #banner h4 {
     color: #fff;
@@ -4727,7 +4732,8 @@ body.is-preload #banner:after {
 }
 @media screen and (max-width: 980px) {
   #banner h1 {
-    font-size: 2.8em;
+    /* font-size: 2.8em; */
+      font-size: 7rem;
   }
   #banner p {
     width: 100%;
@@ -4742,8 +4748,9 @@ body.is-preload #banner:after {
   }
 }
 @media screen and (max-width: 736px) {
-  #banner h1 {
-    font-size: 2.25em;
+  #banner h1 span{
+      font-size: 9rem;
+    /* font-size: 2.25em; */
     color: #ececec;
     margin-bottom: 11em;
     padding-top: 3em;
@@ -4773,7 +4780,7 @@ body.is-preload #banner:after {
     background-image: url("../../images/twoboysatschool_sm.jpg");
   }
   #banner h1 {
-    font-size: 1.75em;
+    font-size: 4.75em;
     margin-top: -4em;
     line-height: 1em;
     font-weight: 400;
