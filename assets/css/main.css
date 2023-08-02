@@ -5436,11 +5436,12 @@ body.is-menu-visible #menu .inner {
   padding: 0em;
   position: relative;
   cursor: default;
+  width: 100%;
 }
 
 #banner:after {
   transition: opacity 1s ease-in-out;
-  transition: delay, '0.5s';
+  transition: delay, '0.1s';
   content: '';
   position: absolute;
   pointer-events: none;
@@ -5448,7 +5449,7 @@ body.is-menu-visible #menu .inner {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(94, 109, 109, 0.1);
+  background-color: rgba(0, 0, 0, 0.4);
   /* background-color: rgba(94, 109, 109, 0.5); */
   opacity: 1;
   display: block;
@@ -5470,10 +5471,6 @@ video {
   opacity: 1;
 }
 
-/* #banner::before {
-  opacity: 1;
-  z-index: 100;
-} */
 
 #banner .inner h1 {
   color: #33bbcf;
@@ -5488,23 +5485,32 @@ video {
   overflow: hidden;
 }
 
+#banner .paragraph-container {
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+  /* Adjust the maximum width as needed */
+  margin: 0 auto;
+  /* Center the container */
+}
+
 #banner .dream-talk {
   font-size: 1.15em;
   margin-bottom: 0.75em;
   margin-top: -4.75em;
-  margin-left: 15em;
   color: #fff;
   font-weight: 400;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 2px;
-  width: 600px;
+  /* width: 800px; */
 }
 
-#banner .dreams {
-  color: #9f0ca9;
+#banner .inner .dreams {
+  color: #ececec;
   text-align: center;
   font-size: 1.5rem;
   margin-top: -2em;
+
 }
 
 
@@ -5632,10 +5638,9 @@ body.is-preload #banner:after {
   }
 
   #banner .dream-talk {
-    width: 100%;
+    min-width: 100%;
     font-size: 1.75em;
-    text-align: center;
-    margin: 1em 4em .5em 0;
+    margin: 2em auto;
 
   }
 
@@ -5647,11 +5652,8 @@ body.is-preload #banner:after {
   #banner .coin {
     margin-right: -10%;
     margin-top: 20%;
-
   }
 }
-
-
 
 @media screen and (max-width: 736px) {
   #banner .inner h1 {
@@ -5667,12 +5669,11 @@ body.is-preload #banner:after {
   }
 
   #banner .dream-talk {
-    margin: -15em 9em 0.65em 0;
-    /* margin-left: -9em; */
+    margin: -15em 0 .65 0;
     padding: 0;
     font-size: 1.5em;
     text-align: center;
-    color: inherit;
+
   }
 
   #banner h4 {
@@ -5704,15 +5705,23 @@ body.is-preload #banner:after {
     color: #ececec;
   }
 
-  #banner .dreams {
-    margin-top: 3.5em;
+  #banner .inner .dreams {
+    margin: 1em auto;
+  }
+
+  #banner .paragraph-container {
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+    /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    /* Center the container */
+
   }
 
   #banner .dream-talk {
-    margin-top: -22em;
-    margin-left: 0em;
-    font-size: 1.10em;
-    width: 95%
+    font-size: 1.10rem;
+    margin: -20em auto;
   }
 
   #banner .goldcoin {
@@ -5730,6 +5739,8 @@ body.is-preload #banner:after {
 
   #banner .button {
     max-width: 7em;
+    margin-top: 0em;
+    ;
   }
 
   #header .logo {
@@ -5738,7 +5749,7 @@ body.is-preload #banner:after {
   }
 }
 
-@media screen and (max-width: 360px) {
+/* @media screen and (max-width: 360px) {
   #banner {
     padding: 6em 2em;
   }
@@ -5754,6 +5765,8 @@ body.is-preload #banner:after {
     padding: 5em 0 2em;
   }
 }
+
+*/
 
 /* Footer */
 #footer {
