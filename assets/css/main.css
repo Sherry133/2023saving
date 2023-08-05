@@ -2490,7 +2490,17 @@ input[type=radio]:focus+label:before {
   position: relative;
   margin: 0 0 3em 0;
   width: 100%;
+  /* background-image: url("images/teenagers.jpeg"); */
+  background-size: cover;
+  /* or contain */
 }
+
+/* .image.main {
+  display: block;
+  position: relative;
+  margin: 0 0 3em 0;
+  width: 100%;
+} */
 
 .image.main img {
   width: 100%;
@@ -2983,7 +2993,7 @@ table.alt tbody tr td {
 #three p {
   display: inline-block;
   color: rgba(13, 108, 140 .7);
-  font-size: 1.25em;
+  font-size: 1em;
   letter-spacing: 2px;
   background-color: transparent;
   margin-left: 0;
@@ -2992,8 +3002,7 @@ table.alt tbody tr td {
 }
 
 #three .alt {
-  display: inline-block;
-
+  display: block;
   padding-left: 0;
 }
 
@@ -3005,10 +3014,12 @@ table.alt tbody tr td {
   -ms-align-items: center;
   align-items: center;
   margin-bottom: 2em;
+
 }
 
 .posts article .content-posts p {
   margin-right: 6em;
+  color: white;
 
 }
 
@@ -3019,7 +3030,7 @@ table.alt tbody tr td {
 
 }
 
-.posts article .image {
+.posts article .image.image .right {
   -moz-order: 99;
   -ms-order: 99;
   order: 99;
@@ -3451,7 +3462,7 @@ table.alt tbody tr td {
 }
 
 .wrapper.style1 header.major p {
-  color: #ececec;
+  color: #272727;
 }
 
 .wrapper.style1 header.major:after {
@@ -3914,7 +3925,7 @@ body .testimonials {
   display: block;
   transition: background-color 0.33s ease, color 0.22s ease;
   text-decoration: none;
-  color: black;
+
 }
 
 .submenu {
@@ -4392,7 +4403,7 @@ body .testimonials {
 
 .posts article .content-literacy p {
   margin: 0 12em size(element-margin_sm) 0;
-  width: 80%;
+  /* width: 80%; */
 }
 
 .posts article .fas {
@@ -4470,6 +4481,7 @@ body .testimonials {
 .regulations a {
   color: #ececec;
   font-size: var(--fsbody);
+  color: #FFB300;
 }
 
 .regulations ul {
@@ -4480,6 +4492,7 @@ body .testimonials {
 .regulations ul li {
   list-style: none;
   margin: 1em auto;
+
   /* margin-left: 260px;  */
 }
 
@@ -4488,7 +4501,7 @@ body .testimonials {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #bbb;
+  color: #FFB300;
   margin-bottom: 3em;
   padding: 0;
 }
@@ -4499,12 +4512,14 @@ body .testimonials {
   list-style: none;
   margin-left: 1.5em;
   padding-left: 1.5em;
+  color: #FFB300;
 }
 
 .regulations li:first-child {
   border-left: 0;
   margin-left: 0;
   padding-left: 0;
+  color: #FFB300;
 }
 
 #comodo img {
@@ -5158,9 +5173,11 @@ li.privacy-content {
   font-weight: 700;
 }
 
+/* This is the hamburger menu */
 #header>a {
   transition: color 0.2s ease-in-out;
   padding: 0;
+  margin-right: 3em;
   color: inherit;
   font-weight: 700;
   text-decoration: none;
@@ -5197,14 +5214,14 @@ li.privacy-content {
 #header>a[href="#menu"]:before {
   float: right;
   line-height: inherit;
-  margin-left: 0.5em;
+  margin-left: .5em;
 }
 
 #header>a[href="#menu"]:hover,
 #header>a[href="#menu"]:focus {
   color: #b7475a;
-  transform: rotate(720deg);
-  transition: transform 1s ease-out;
+  /* transform: rotate(720deg);
+  transition: transform 1s ease-out; */
 }
 
 .alt {
@@ -5270,8 +5287,9 @@ li.privacy-content {
   .goldcoin {
     left: -11%;
 
-
   }
+
+
 }
 
 /* Menu */
@@ -5608,6 +5626,10 @@ body.is-preload #banner:after {
   #banner .goldcoin {
     top: 40%;
   }
+
+  /* #header>a {
+    width: 1em;
+  } */
 }
 
 /* This is the macBook size */
@@ -5766,15 +5788,17 @@ body.is-preload #banner:after {
   }
 }
 
-*/
+
 
 /* Footer */
 #footer {
-  background-image: linear-gradient(to top, rgba(64, 63, 135, 0.9), rgba(64, 63, 135, 0.9)), url("../../images/banner.jpg");
+
+  background: transparent;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
   padding: 12em 0 2em;
+  color: #bbb;
 }
 
 #footer>.inner {
@@ -5809,6 +5833,7 @@ body.is-preload #banner:after {
 }
 
 #footer .contact li.icon:before {
+
   color: rgba(99, 116, 133, 0.25);
   position: absolute;
   left: 0;
@@ -6126,7 +6151,7 @@ body.is-preload #banner:after {
 }
 
 #footer .copyright {
-  color: #bbb;
+  color: #FFB300;
   margin-bottom: 3em;
   padding: 0;
   text-align: center;
@@ -6147,7 +6172,7 @@ body.is-preload #banner:after {
 }
 
 #footer .social {
-  color: #bbb;
+  color: blue;
   margin-bottom: 3em;
   padding: 0;
   text-align: center;
@@ -6160,6 +6185,7 @@ body.is-preload #banner:after {
   margin-top: 1.5em;
   margin-left: 1.5em;
   padding-left: 1.5em;
+  color: #bbb;
 }
 
 #footer .social li:first-child {
@@ -6197,6 +6223,7 @@ body.is-preload #banner:after {
 @media screen and (max-width: 736px) {
   #footer {
     padding-top: 7em;
+    background-color: transparent;
   }
 
   #footer>.inner {
@@ -6237,6 +6264,7 @@ body.is-preload #banner:after {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background: transparent;
   }
 
   #footer form {
