@@ -2571,7 +2571,7 @@ ul.actions {
   display: -moz-flex;
   display: -ms-flex;
   display: flex;
-  cursor: default;
+  cursor: pointer;
   list-style: none;
   margin-left: -1em;
   padding-left: 0;
@@ -2580,6 +2580,7 @@ ul.actions {
 ul.actions li {
   padding: 0 0 0 1em;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 ul.actions.special {
@@ -2588,10 +2589,12 @@ ul.actions.special {
   justify-content: center;
   width: 100%;
   margin-left: 0;
+  cursor: pointer;
 }
 
 ul.actions.special li:first-child {
   padding-left: 0;
+  cursor: pointer;
 }
 
 ul.actions.stacked {
@@ -4005,7 +4008,7 @@ body .testimonials {
 
 .intro h2 {
   margin: 0.5em 0 -1em 0em;
-  color: #266a2e;
+  color: #005a80;
   font-weight: 700;
 }
 
@@ -4026,6 +4029,10 @@ body .testimonials {
   margin: 3.5em 0 1em 0;
 }
 
+/* .item-nested-start .item-nested h2 {
+  color: #005a80;
+} */
+
 .item-nested-start p {
   width: 80%;
   font-weight: 400;
@@ -4039,7 +4046,7 @@ body .testimonials {
 }
 
 .item-nested h2 {
-  color: green;
+  color: #005a80;
   line-height: 1em;
   width: 80%;
   padding: 0em 0em;
@@ -5304,6 +5311,7 @@ li.privacy-content {
 /* Menu */
 #page-wrapper {
   transition: filter 0.25s ease;
+
 }
 
 #menu {
@@ -5464,10 +5472,12 @@ body.is-menu-visible #menu .inner {
   position: relative;
   cursor: default;
   width: 100%;
+  /* background-color: #000; */
+  /* z-index: -1; */
 }
 
 #banner:after {
-  transition: opacity 1s ease-in-out;
+  transition: opacity 300ms ease-in-out;
   transition: delay, '0.1s';
   content: '';
   position: absolute;
@@ -5476,8 +5486,7 @@ body.is-menu-visible #menu .inner {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  /* background-color: rgba(94, 109, 109, 0.5); */
+  background-color: rgba(0, 0, 0, 0.25);
   opacity: 1;
   display: block;
   overflow: hidden;
@@ -5548,19 +5557,11 @@ video {
   letter-spacing: 2px;
   background: inherit;
   border: 2px solid #9f0ca9;
-}
-
-#banner .coin {
-  display: grid;
-  position: absolute;
-  top: 65%;
-  right: 15%;
-  transform-origin: center;
-  transform: rotate(0deg);
-  /* Add initial rotation here */
-  transition: transform 2s;
+  cursor: pointer;
 
 }
+
+
 
 #banner .coin:hover {
   animation: shake-then-rotate 2s forwards;
@@ -5636,9 +5637,6 @@ body.is-preload #banner:after {
     top: 40%;
   }
 
-  /* #header>a {
-    width: 1em;
-  } */
 }
 
 /* This is the macBook size */
@@ -5690,7 +5688,7 @@ body.is-preload #banner:after {
   #banner .inner h1 {
     font-size: 2.25em;
     color: #ececec;
-    margin-bottom: 11em;
+    margin-bottom: 1em;
     padding-top: 1em;
   }
 
@@ -5700,7 +5698,7 @@ body.is-preload #banner:after {
   }
 
   #banner .dream-talk {
-    margin: -15em 0 .65 0;
+    margin: -55em 0 .65 0;
     padding: 0;
     font-size: 1.5em;
     text-align: center;
@@ -5737,7 +5735,9 @@ body.is-preload #banner:after {
   }
 
   #banner .inner .dreams {
-    margin: 1em auto;
+    margin: 2em auto;
+    font-size: 1rem;
+
   }
 
   #banner .paragraph-container {
@@ -5751,8 +5751,10 @@ body.is-preload #banner:after {
   }
 
   #banner .dream-talk {
+    display: flex;
+    flex-direction: column;
     font-size: 1.10rem;
-    margin: -20em auto;
+    margin: 0em 0 1.5em auto;
   }
 
   #banner .goldcoin {
@@ -5761,17 +5763,10 @@ body.is-preload #banner:after {
     width: 20%;
   }
 
-  #banner .coin {
-    width: 20%;
-    margin-top: -40%;
-    margin-right: -25%;
-  }
-
-
-  #banner .button {
+  #banner .inner.button {
     max-width: 7em;
-    margin-top: 0em;
-    ;
+    margin-top: 20em;
+    margin-bottom: -4em;
   }
 
   #header .logo {
