@@ -5561,8 +5561,6 @@ video {
 
 }
 
-
-
 #banner .coin:hover {
   animation: shake-then-rotate 2s forwards;
 }
@@ -5666,11 +5664,15 @@ body.is-preload #banner:after {
     margin-top: 3em;
   }
 
+  #banner .inner .dreams {
+    margin-top: 1em;
+  }
+
   #banner .dream-talk {
     min-width: 100%;
     font-size: 1.75em;
-    margin: 2em auto;
-
+    margin: 0em auto;
+    /* color: red; */
   }
 
   #banner .goldcoin {
@@ -5678,10 +5680,6 @@ body.is-preload #banner:after {
     margin-left: -10%;
   }
 
-  #banner .coin {
-    margin-right: -10%;
-    margin-top: 20%;
-  }
 }
 
 @media screen and (max-width: 736px) {
@@ -5702,7 +5700,6 @@ body.is-preload #banner:after {
     padding: 0;
     font-size: 1.5em;
     text-align: center;
-
   }
 
   #banner h4 {
@@ -5710,6 +5707,10 @@ body.is-preload #banner:after {
     font-weight: normal;
     letter-spacing: 0.15em;
     font-size: 1.25em;
+  }
+
+  #banner .button {
+    margin-top: 1em;
   }
 }
 
