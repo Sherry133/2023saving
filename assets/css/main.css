@@ -2997,10 +2997,10 @@ table.alt tbody tr td {
   display: inline-block;
   color: rgba(13, 108, 140 .7);
   font-size: 1em;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
   background-color: transparent;
   margin-left: 0;
-  width: 70%;
+  width: 90%;
   padding: 1em;
 }
 
@@ -4408,14 +4408,10 @@ body .testimonials {
   margin-bottom: 1em;
 }
 
-.posts article .content-literacy p {
+.content-literacy p {
+  font-family: 'Poppins', sans-serif;
   margin: 0 1em 0;
   width: 80%;
-  line-height: 1.3;
-  font-size: 1rem;
-
-
-
 }
 
 .posts article .fas {
@@ -4425,6 +4421,7 @@ body .testimonials {
 .posts article .content {
   --ms-flex: 1;
   flex: 1;
+
 }
 
 .posts article .image {
@@ -4535,11 +4532,13 @@ body .testimonials {
   color: #FFB300;
 }
 
-#comodo img {
+#comodo {
   display: grid;
-  place-content: center;
-  width: 100%;
-  height: auto;
+  place-items: center;
+  top: 0;
+  margin-left: 6em;
+  width: 50%;
+  max-height: 50dvh;
 }
 
 .ssl-container img {
