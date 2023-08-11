@@ -4557,7 +4557,7 @@ body .testimonials {
     height: auto;
   }
 
-  #comodo img {
+  #comodo .ssl-container {
     width: 100%;
     height: auto;
   }
