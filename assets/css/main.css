@@ -3230,10 +3230,11 @@ table.alt tbody tr td {
   position: relative;
 }
 
+/*
 .wrapper:before,
 .wrapper:after {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,0 0,100 100,100' style='fill:%23ececec%3B' /%3E%3C/svg%3E");
-}
+} */
 
 .wrapper>.inner {
   margin: 0 auto;
@@ -5530,6 +5531,11 @@ video {
   overflow: hidden;
 }
 
+#banner .inner .holidays {
+  font-size: 3rem;
+  margin-bottom: 1em;
+}
+
 #banner .paragraph-container {
   display: flex;
   justify-content: center;
@@ -5694,7 +5700,7 @@ body.is-preload #banner:after {
 @media screen and (max-width: 736px) {
   #banner .inner h1 {
     font-size: 2.25em;
-    color: #ececec;
+    /* color: #ececec; */
     margin-bottom: 1em;
     padding-top: 1em;
   }
@@ -5742,6 +5748,12 @@ body.is-preload #banner:after {
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     color: #ececec;
+  }
+
+  #banner .inner .holidays {
+    font-size: 1.5rem;
+    margin-bottom: -1em;
+
   }
 
   #banner .inner .dreams {
