@@ -4708,8 +4708,8 @@ body .testimonials {
   max-width: 100%;
   max-height: 100%;
   transition: 500ms transform ease-in-out;
-  -o-object-fit: contain;
-  object-fit: contain;
+  -o-object-fit: cover;
+  object-fit: cover;
   -o-object-position: center;
   object-position: center;
 }
@@ -4748,7 +4748,7 @@ a:link {
   transform: translate -50%, -50%;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 372px) {
   #popup {
     height: 100%;
   }
@@ -5265,6 +5265,7 @@ li.privacy-content {
     white-space: nowrap;
     width: 3.5em;
     color: blue;
+
   }
 
   .alt>a[href="#menu"]:before {
@@ -5470,29 +5471,27 @@ body.is-menu-visible #menu .inner {
 #banner {
   padding: 0em;
   position: relative;
-  cursor: default;
+  cursor: pointer;
   width: 100%;
   /* background-color: #000; */
   /* z-index: -1; */
 }
 
-#banner:after {
-  transition: opacity 300ms ease-in-out;
-  transition: delay, '0.1s';
-  content: '';
+#banner:before {
   position: absolute;
   pointer-events: none;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.75);
   opacity: 1;
   display: block;
   overflow: hidden;
+  z-index: -2;
 }
 
-video {
+#background-video {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -5507,6 +5506,83 @@ video {
   opacity: 1;
 }
 
+#banner:after {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  opacity: 1;
+  display: block;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#confetti-video {
+  position: absolute;
+  /* top: 100%;
+  left: 100%; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+
+}
+
+@keyframes drop-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-20px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(20px);
+  }
+}
+
+.holidays {
+  animation: drop-in 1.5s ease-out forwards,
+    shake 1.5s ease-out forwards 1.5s;
+  animation-delay: .3s;
+  margin-top: -3em;
+  font-size: 3rem;
+  margin-bottom: 1em;
+  text-align: center;
+  padding: 0;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-weight: 700;
+  opacity: 0;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
 .poster {
   min-width: 100%;
   min-height: 100%;
@@ -5516,7 +5592,6 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 
 #banner .inner h1 {
   color: #33bbcf;
@@ -5531,11 +5606,6 @@ video {
   overflow: hidden;
 }
 
-#banner .inner .holidays {
-  font-size: 3rem;
-  margin-bottom: 1em;
-}
-
 #banner .paragraph-container {
   display: flex;
   justify-content: center;
@@ -5543,6 +5613,7 @@ video {
   /* Adjust the maximum width as needed */
   margin: 0 auto;
   /* Center the container */
+
 }
 
 #banner .dream-talk {
@@ -5573,6 +5644,8 @@ video {
   background: inherit;
   border: 2px solid #9f0ca9;
   cursor: pointer;
+  z-index: 100;
+
 
 }
 
@@ -5616,6 +5689,7 @@ video {
   opacity: 1;
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
 
 body.is-preload #banner .inner {
@@ -6198,14 +6272,14 @@ body.is-preload #banner:after {
 }
 
 #footer .social {
-  color: blue;
+  color: #ececec;
   margin-bottom: 3em;
   padding: 0;
   text-align: center;
 }
 
 #footer .social li {
-  border-left: solid 1px rgba(99, 116, 133, 0.25);
+  border-left: solid 1px white;
   display: inline-block;
   list-style: none;
   margin-top: 1.5em;
