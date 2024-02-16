@@ -5622,7 +5622,7 @@ body.is-menu-visible #menu .inner {
   margin-top: -4.75em;
   color: #fff;
   font-weight: 400;
-  /* text-align: center; */
+  text-align: center; 
   letter-spacing: 2px;
   /* width: 800px; */
 }
