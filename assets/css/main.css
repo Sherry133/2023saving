@@ -4490,9 +4490,9 @@ body .testimonials {
 }
 
 .regulations a {
-  color: #ececec;
+/*   color: #ececec; */
   font-size: var(--fsbody);
-  color: #FFB300;
+  color: #898686;
 }
 
 .regulations ul {
@@ -6251,7 +6251,7 @@ body.is-preload #banner:after {
 }
 
 #footer .copyright {
-  color: #FFB300;
+  color: #898686;
   margin-bottom: 3em;
   padding: 0;
   text-align: center;
