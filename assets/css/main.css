@@ -4533,14 +4533,14 @@ body .testimonials {
   color: #FFB300;
 }
 
-#comodo {
+/* #comodo {
   display: grid;
   place-items: center;
   top: 0;
   margin-left: 6em;
   width: 50%;
   max-height: 50dvh;
-}
+} */
 
 .ssl-container img {
   display: grid;
